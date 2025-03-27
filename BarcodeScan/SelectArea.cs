@@ -78,7 +78,7 @@ namespace BarcodeScan
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            this.form1.Location = new Point(this.Location.X, this.Location.Y);
+            
             this.form1.Save(this.Location.X, this.Location.Y, this.Width, this.Height, this.Size);
             this.Close();
             
