@@ -26,7 +26,6 @@ namespace BarcodeScan
 
             SelectArea selectArea = new SelectArea(this);
             this.Hide();
-
             selectArea.ShowDialog();
             this.Show();
 

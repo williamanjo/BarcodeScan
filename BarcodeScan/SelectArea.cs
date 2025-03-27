@@ -18,6 +18,7 @@ namespace BarcodeScan
         public const int HTCAPTION = 0x2;
         public BarcodeScan form1 = null;
 
+
         [DllImport("User32.dll")]
         public static extern bool ReleaseCapture();
 
@@ -77,6 +78,7 @@ namespace BarcodeScan
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            this.form1.Location = new Point(this.Location.X, this.Location.Y);
             this.form1.Save(this.Location.X, this.Location.Y, this.Width, this.Height, this.Size);
             this.Close();
             
